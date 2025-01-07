@@ -1,0 +1,356 @@
+/* General Styles */
+:root {
+  /*winter*/
+  --baby-blue: #7ac7edff;
+  --azure-web: #e0f2f4ff;
+  --prussian-blue: #173450ff;
+  --glaucous: #547ca9ff;
+  --rose-ebony: #593832ff;
+  /*fall*/
+  --buff: #d2a987ff;
+  --burnt-orange: #b05821ff;
+  --sandy-brown: #f69243ff;
+  --bole: #753b31ff;
+  --chocolate-cosmos: #621719ff;
+  /*spring*/
+  --finn: #542460ff;
+  --plum-web: #eaafecff;
+  --pomp-and-power: #a066a2ff;
+  --dark-spring-green: #026f26ff;
+  --malachite: #6edc68ff;
+  /*summer*/
+  --bronze: #c27b16ff;
+  --coral: #f17f4bff;
+  --green-yellow: #bdeb4cff;
+  --forest-green: #408a31ff;
+  --blue-green: #1597bdff;
+  /*buttons*/
+  --earth-yellow: #FAE58Eff;
+  --raw-umber: #a1623aff;
+  --caf-noir: #4f301eff;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 15vh;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "VT323", sans-serif;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  color: #333;
+  text-align: center;
+  height: 500vh;
+  width:100vw;
+  overflow: scroll;
+}
+
+/* Header */
+.header {
+  background: transparent;
+  color: white;
+  height: 15vh;
+  width: 100%;
+  /* layerlar için yeni koydum*/
+  position: fixed;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+}
+/*
+.header-name{
+  height: 20%;
+  text-align: center;
+  width: 100%;
+  display: block;
+}*/
+.header-navbar{
+  min-height: 100%;
+  width: 60%;
+  background-image: url(/assets/images/backgrounds/header-background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+/* Navbar elements */
+.header-navbar-ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+}
+.navbar-li a{
+  text-decoration: none;
+  color: var(--caf-noir);
+}
+/*Shop Sections Navbar*/
+.navbar {
+  background: transparent;
+  padding:0;
+  max-width: 100%;
+  height: 20%;
+  display:block;
+}
+.menu-button {
+  background: transparent;
+  border: none;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 1.5rem;
+  padding: 1rem;
+  height: 100%;
+}
+
+.nav-item,
+.menu-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--chocolate-cosmos);
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-item .icon {
+  max-height: 80%;
+  transition: transform 0.3s ease;
+}
+
+.nav-item .text {
+  font-size: 0.9rem;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  padding-top:1rem;
+}
+
+.nav-item:hover .icon {
+  transform: scale(1.2);
+}
+
+.nav-item:hover .text {
+  opacity: 1;
+  transform: scale(1);
+}
+/*there is no functon so they wont work*/
+.nav-item.active .icon {
+  transform: scale(1.2);
+}
+
+.nav-item.active .text {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+/*Main Categories Section */
+.main {
+  background-color: var(--earth-yellow);
+  display: flex;
+  height: 500vh;
+  gap: 30vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+   /* layerlar için yeni koydum*/
+   position: relative;
+   z-index: 1;
+  
+}
+.section{
+  /* layerlar için height width değiştirdim düzelt*/
+  height:70vh;
+  background-image: url(/assets/images/backgrounds/section-back.png);
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  background-position: center;
+  width: 80%;
+  border-radius: 0.3rem;
+  
+}
+/*Shop Sections Products Display*/
+
+.products-Ul{
+  padding: 0;
+  overflow-y:auto;
+  max-height: 50vh;
+
+}
+.products-Ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border:0.2rem solid var(--burnt-orange);
+  padding: 1rem 0;
+}
+.products-Ul li img{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.products-Ul li h3{
+  width: 7.5rem;
+  height: 2.5rem;
+}
+.products-Ul li p{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.products-Ul li button{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.div{
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+/*About us section -these will be done as rewievs 
+.avatar-div{
+  background-image: url(portrait-blank.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+.avatar{
+  width: 3.9rem;
+  height: 3.9rem;
+}
+.name{
+  background-image: url(blank-box.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 8rem;
+  height: 1.5rem;
+}*/
+
+/*Footer and Seasonal themes*/
+.footer {
+  height: 20vh;
+}
+.winter {
+  /*background-image: url(winter.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
+  daha sonra değitir çalıştığına bakmak için ekledim*/
+  color: var(--caf-noir);
+
+}
+
+/*trying background layering*/
+.panel-div{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1200px;/*it was '1000px' changed it to see if parallax animation working*/
+  overflow: hidden;
+  z-index: -20;
+}
+/*
+.panel-div,.panel-layer{
+  height: 1000px;
+  width: 100%;
+  position: fixed;
+}*/
+.panel-layer{
+  height: 130vh;/*it was '100vh' changed it to see if parallax animation working*/
+  width: 100%;
+  position: fixed;
+  transform:translate3d(0px,0px,0px);
+  background-repeat: no-repeat;
+}
+.layer{
+  height: 1000px;
+  width: 100%;
+  z-index: -1;
+  
+}
+.layer0a{
+  background-image: url(/assets/images/backgrounds/parallax1.png);
+  position: absolute;
+  
+}
+.layer0b{
+  background-image: url(/assets/images/backgrounds/parallax2.png);
+  position: absolute;
+}
+.pixelated{
+  image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    image-rendering: optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+@keyframes slide{
+  from {
+    transform: translateX(0); /* Start off-screen to the right */
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+.layer1{
+  background-image: url(/assets/images/backgrounds/parallax3a.png);
+  animation: slide 80s linear infinite;
+  opacity: 0.2; 
+}
+.layer2{
+  background-image: url(/assets/images/backgrounds/parallax3b.png);
+  animation: slide 80s linear infinite;
+  opacity: 0.2;
+}
+.layer3{
+  background-image: url(/assets/images/backgrounds/parallax4.png);
+  background-position: bottom center;
+}
+.layer4{
+  background-image: url(/assets/images/backgrounds/parallax5.png);
+  background-position: bottom center;
+}
+.layer5{
+  background-image: url(/assets/images/backgrounds/parallax6.png);
+  background-position: bottom center;
+}
+.layer6{
+  background-image: url(/assets/images/backgrounds/parallax7.png);
+  background-position: bottom center;
+}
+.layer7{
+  background-image: url(/assets/images/backgrounds/parallax8.png);
+  background-position: bottom center;
+}
+.layer8{
+  background-image: url(/assets/images/backgrounds/parallax9.png);
+  background-position: bottom left;
+}
+.layer9{
+  background-image: url(/assets/images/backgrounds/parallax10.png);
+  background-position: bottom right;
+}
+/*divider home*/
+.divider{
+  background-image: url(/assets/images/backgrounds/sdv_divider.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-position: bottom center;
+  z-index: 20;
+}

@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Anchovy",
+    "price": 30,
+    "category": "seafood",
+    "season": ["spring", "fall"],
+    "image": "assets/images/products/sea/SpringFall_Anchovy.png"
+  },
+  {
+    "name": "Glacierfish",
+    "price": 45,
+    "category": "seafood",
+    "season": ["winter"],
+    "image": "assets/images/products/sea/Winter_Glacierfish.png"
+  },
+  {
+    "name": "Lingcod",
+    "price": 75,
+    "category": "seafood",
+    "season": ["winter"],
+    "image": "assets/images/products/sea/Winter_Lingcod.png"
+  },
+  {
+    "name": "Perch",
+    "price": 30,
+    "category": "seafood",
+    "season": ["winter"],
+    "image": "assets/images/products/sea/Winter_Perch.png"
+  },
+  {
+    "name": "Sunfish",
+    "price": 200,
+    "category": "seafood",
+    "season": ["spring"],
+    "image": "assets/images/products/sea/Spring_Sunfish.png"
+  },
+  {
+    "name": "Squid",
+    "price": 50,
+    "category": "seafood",
+    "season": ["winter"],
+    "image": "assets/images/products/sea/Winter_Squid.png"
+  },
+  {
+    "name": "Eel",
+    "price": 85,
+    "category": "seafood",
+    "season": ["spring", "fall"],
+    "image": "assets/images/products/sea/SpringFall_Eel.png"
+  },
+  {
+    "name": "Halibut",
+    "price": 80,
+    "category": "seafood",
+    "season": ["spring"],
+    "image": "assets/images/products/sea/Spring_Halibut.png"
+  },
+  {
+    "name": "Herring",
+    "price": 30,
+    "category": "seafood",
+    "season": ["spring"],
+    "image": "assets/images/products/sea/Spring_Herring.png"
+  },
+  {
+    "name": "Pike",
+    "price": 100,
+    "category": "seafood",
+    "season": ["winter","summer"],
+    "image": "assets/images/products/sea/WinterSummer_Pike.png"
+  },
+  {
+    "name": "Pufferfish",
+    "price": 200,
+    "category": "seafood",
+    "season": ["summer"],
+    "image": "assets/images/products/sea/Summer_Pufferfish.png"
+  },
+  {
+    "name": "Rainbow Trout",
+    "price": 65,
+    "category": "seafood",
+    "season": ["summer"],
+    "image": "assets/images/products/sea/Summer_Rainbow_Trout.png"
+  },
+  {
+    "name": "Salmon",
+    "price": 75,
+    "category": "seafood",
+    "season": ["fall"],
+    "image": "assets/images/products/sea/Fall_Salmon.png"
+  },
+  {
+    "name": "Sardine",
+    "price": 40,
+    "category": "seafood",
+    "season": ["spring", "fall", "winter"],
+    "image": "assets/images/products/sea/SpringFallWinter_Sardine.png"
+  },
+  {
+    "name": "Shad",
+    "price": 60,
+    "category": "seafood",
+    "season": ["spring", "fall","summer"],
+    "image": "assets/images/products/sea/SpringFallSummer_Shad.png"
+  },
+  {
+    "name": "Smallmouth Bass",
+    "price": 50,
+    "category": "seafood",
+    "season": ["spring", "fall"],
+    "image": "assets/images/products/sea/SpringFall_Smallmouth_Bass.png"
+  },
+  {
+    "name": "Sturgeon",
+    "price": 200,
+    "category": "seafood",
+    "season": ["summer", "winter"],
+    "image": "assets/images/products/sea/WinterSummer_Sturgeon.png"
+  },
+  {
+    "name": "Tuna",
+    "price": 100,
+    "category": "seafood",
+    "season": ["summer", "winter"],
+    "image": "assets/images/products/sea/WinterSummer_Tuna.png"
+  },
+  {
+    "name": "Walleye",
+    "price": 105,
+    "category": "seafood",
+    "season": ["fall", "winter"],
+    "image": "assets/images/products/sea/FallWinter_Walleye.png"
+  },
+  {
+    "name": "Red Mullet",
+    "price": 75,
+    "category": "seafood",
+    "season": ["winter","summer"],
+    "image": "assets/images/products/sea/WinterSummer_Red_Mullet.png"
+  }
+]

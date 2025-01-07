@@ -1,0 +1,224 @@
+[
+  {
+    "name": "Egg",
+    "price": 50,
+    "category": "animal",
+    "image":"assets/images/products/animal/Egg.png"
+  },
+  {
+    "name": "Large Egg",
+    "price": 95,
+    "category": "animal",
+    "image":"assets/images/products/animal/Large_Egg.png"
+  },
+  {
+    "name": "Brown Egg",
+    "price": 50,
+    "category": "animal",
+    "image":"assets/images/products/animal/Brown_Egg.png"
+  },
+  {
+    "name": "Large Brown Egg",
+    "price": 95,
+    "category": "animal",
+    "image":"assets/images/products/animal/Large_Brown_Egg.png"
+  },
+  {
+    "name": "Void Egg",
+    "price": 65,
+    "category": "animal",
+    "image":"assets/images/products/animal/Void_Egg.png"
+  },
+  {
+    "name": "Golden Egg",
+    "price": 500,
+    "category": "animal",
+    "image":"assets/images/products/animal/Golden_Egg.png"
+  },
+  {
+    "name": "Duck Egg",
+    "price": 95,
+    "category": "animal",
+    "image":"assets/images/products/animal/Duck_Egg.png"
+  },
+  {
+    "name": "Duck Feather",
+    "price": 250,
+    "category": "animal",
+    "image":"assets/images/products/animal/Duck_Feather.png"
+  },
+  {
+    "name": "Rabbit Wool",
+    "price": 340,
+    "category": "animal",
+    "image":"assets/images/products/animal/Wool.png"
+  },
+  {
+    "name": "Milk",
+    "price": 125,
+    "category": "animal",
+    "image":"assets/images/products/animal/Milk.png"
+  },
+  {
+    "name": "Large Milk",
+    "price": 190,
+    "category": "animal",
+    "image":"assets/images/products/animal/Large_Milk.png"
+  },
+  {
+    "name": "Goat Milk",
+    "price": 225,
+    "category": "animal",
+    "image":"assets/images/products/animal/Goat_Milk.png"
+  },
+  {
+    "name": "Large Goat Milk",
+    "price": 345,
+    "category": "animal",
+    "image":"assets/images/products/animal/Large_Goat_Milk.png"
+  },
+  {
+    "name": "Sheep Wool",
+    "price": 340,
+    "category": "animal",
+    "image":"assets/images/products/animal/Wool.png"
+  },
+  {
+    "name": "Pig Truffle",
+    "price": 625,
+    "category": "animal",
+    "image":"assets/images/products/animal/Truffle.png"
+  },
+  {
+    "name": "Ostrich Egg",
+    "price": 600,
+    "category": "animal",
+    "image":"assets/images/products/animal/Ostrich_Egg.png"
+  },
+  {
+    "name": "Cheese",
+    "category": "artisan",
+    "price": 200,
+    "image": "assets/images/products/artisan/Cheese.png"
+  },
+  {
+    "name": "Goat Cheese",
+    "category": "artisan",
+    "price": 400,
+    "image": "assets/images/products/artisan/Goat_Cheese.png"
+  },
+  {
+    "name": "Beer",
+    "category": "artisan",
+    "price": 200,
+    "image": "assets/images/products/artisan/Beer.png"
+  },
+  {
+    "name": "Mead",
+    "category": "artisan",
+    "price": 200,
+    "image": "assets/images/products/artisan/Mead.png"
+  },
+  {
+    "name": "Pale Ale",
+    "category": "artisan",
+    "price": 300,
+    "image": "assets/images/products/artisan/Pale_Ale.png"
+  },
+  {
+    "name": "Wine",
+    "category": "artisan",
+    "price": 400,
+    "image": "assets/images/products/artisan/Wine.png"
+  },
+  {
+    "name": "Coffee",
+    "category": "artisan",
+    "price": 150,
+    "image": "assets/images/products/artisan/Coffee.png"
+  },
+  {
+    "name": "Green Tea",
+    "category": "artisan",
+    "price": 100,
+    "image": "assets/images/products/artisan/Green_Tea.png"
+  },
+  {
+    "name": "Juice",
+    "category": "artisan",
+    "price": 150,
+    "image": "assets/images/products/artisan/Juice.png"
+  },
+  {
+    "name": "Honey",
+    "category": "artisan",
+    "price": 100,
+    "image": "assets/images/products/artisan/Honey.png"
+  },
+  {
+    "name": "Pickles",
+    "category": "artisan",
+    "price": 100,
+    "image": "assets/images/products/artisan/Pickles.png"
+  },
+  {
+    "name": "Jelly",
+    "category": "artisan",
+    "price": 100,
+    "image": "assets/images/products/artisan/Jelly.png"
+  },
+  {
+    "name": "Caviar",
+    "category": "artisan",
+    "price": 500,
+    "image": "assets/images/products/artisan/Caviar.png"
+  },
+  {
+    "name": "Aged Roe",
+    "category": "artisan",
+    "price": 300,
+    "image": "assets/images/products/artisan/Aged_Roe.png"
+  },
+  {
+    "name": "Truffle Oil",
+    "category": "artisan",
+    "price": 1065,
+    "image": "assets/images/products/artisan/Truffle_Oil.png"
+  },
+  {
+    "name": "Cloth",
+    "category": "artisan",
+    "price": 470,
+    "image": "assets/images/products/artisan/Cloth.png"
+  },
+  {
+    "name": "Mayonnaise",
+    "category": "artisan",
+    "price": 190,
+    "image": "assets/images/products/artisan/Mayonnaise.png"
+  },
+  {
+    "name": "Duck Mayonnaise",
+    "category": "artisan",
+    "price": 375,
+    "image": "assets/images/products/artisan/Duck_Mayonnaise.png"
+  },
+  {
+    "name": "Void Mayonnaise",
+    "category": "artisan",
+    "price": 275,
+    "image": "assets/images/products/artisan/Void_Mayonnaise.png"
+  },
+  {
+    "name": "Dinosaur Mayonnaise",
+    "category": "artisan",
+    "price": 800,
+    "image": "assets/images/products/artisan/Dinosaur_Mayonnaise.png"
+  },
+  {
+    "name": "Oil",
+    "category": "artisan",
+    "price": 100,
+    "image": "assets/images/products/artisan/Oil.png"
+  }
+]

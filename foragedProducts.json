@@ -1,0 +1,154 @@
+[{
+  "name": "Common Mushroom",
+  "season": ["spring","fall","summer"],
+  "price": 40,
+  "category": "forage",
+  "image":"assets/images/products/foraged/SpringFallSummer_Common_Mushroom.png"
+},
+{
+  "name": "Daffodil",
+  "season": ["spring"],
+  "price": 30,
+  "category": "forage",
+  "image":"assets/images/products/foraged/Spring_Daffodil.png"
+},
+{
+  "name": "Dandelion",
+  "season": ["spring"],
+  "price": 40,
+  "category": "forage",
+  "image":"assets/images/products/foraged/Spring_Dandelion.png"
+},
+{
+  "name": "Leek",
+  "season": ["spring"],
+  "price": 60,
+  "category": "forage",
+  "image":"assets/images/products/foraged/Spring_Leek.png"
+},
+{
+  "name": "Morel",
+  "season": ["spring"],
+  "price": 150,
+  "category": "forage",
+  "image":"assets/images/products/foraged/Spring_Morel.png"
+},
+{
+  "name": "Salmonberry",
+  "season": ["spring"],
+  "price": 5,
+  "category": "forage",
+  "image":"assets/images/products/foraged/Spring_Salmonberry.png"
+},
+{
+  "name": "Spring Onion",
+  "season": ["spring"],
+  "price": 8,
+  "category": "forage",
+  "image":"assets/images/products/foraged/Spring_Onion.png"
+},
+{
+  "name": "Wild Horseradish",
+  "season": ["spring"],
+  "price": 50,
+  "category": "forage",
+  "image":"assets/images/products/foraged/Spring_Wild_Horseradish.png"
+},
+{
+  "name": "Blackberry",
+  "season": ["fall"],
+  "price": 20,
+  "category": "forage",
+  "image":"assets/images/products/foraged/Fall_Blackberry.png"
+},
+{
+  "name": "Chanterelle",
+  "season": ["fall"],
+  "price": 160,
+  "category": "forage",
+  "image":"assets/images/products/foraged/Fall_Chanterelle.png"
+},
+{
+  "name": "Hazelnut",
+  "season": ["fall"],
+  "price": 90,
+  "category": "forage",
+  "image":"assets/images/products/foraged/Fall_Hazelnut.png"
+},
+{
+  "name": "Purple Mushroom",
+  "season": ["fall"],
+  "price": 250,
+  "category": "forage",
+  "image":"assets/images/products/foraged/Fall_Purple_Mushroom.png"
+},
+{
+  "name": "Red Mushroom",
+  "season": ["fall","summer"],
+  "price": 75,
+  "category": "forage",
+  "image":"assets/images/products/foraged/FallSummer_Red_Mushroom.png"
+},
+{
+  "name": "Wild Plum",
+  "season": ["fall"],
+  "price": 80,
+  "category": "forage",
+  "image":"assets/images/products/foraged/Fall_Wild_Plum.png"
+},
+{
+  "name": "Crocus",
+  "season": ["winter"],
+  "price": 60,
+  "category": "forage",
+  "image":"assets/images/products/foraged/Winter_Crocus.png"
+},
+{
+  "name": "Crystal Fruit",
+  "season": ["winter"],
+  "price": 150,
+  "category": "forage",
+  "image":"assets/images/products/foraged/Winter_Crystal_Fruit.png"
+},
+{
+  "name": "Holly",
+  "season": ["winter"],
+  "price": 80,
+  "category": "forage",
+  "image":"assets/images/products/foraged/Winter_Holly.png"
+},
+{
+  "name": "Snow Yam",
+  "season": ["winter"],
+  "price": 100,
+  "category": "forage",
+  "image":"assets/images/products/foraged/Winter_Snow_Yam.png"
+},
+{
+  "name": "Winter Root",
+  "season": ["winter"],
+  "price": 70,
+  "category": "forage",
+  "image":"assets/images/products/foraged/Winter_Root.png"
+},
+{
+  "name": "Fiddlehead Fern",
+  "season": ["summer"],
+  "price": 90,
+  "category": "forage",
+  "image":"assets/images/products/foraged/Summer_Fiddlehead_Fern.png"
+},
+{
+  "name": "Spice Berry",
+  "season": ["summer"],
+  "price": 80,
+  "category": "forage",
+  "image":"assets/images/products/foraged/Summer_Spice_Berry.png"
+},
+{
+  "name": "Sweet Pea",
+  "season": ["summer"],
+  "price": 50,
+  "category": "forage",
+  "image":"assets/images/products/foraged/Summer_Sweat_Pea.png"
+}]

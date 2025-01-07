@@ -1,0 +1,282 @@
+[{
+  "name": "Blue Jazz",
+  "price": 50,
+  "season": ["spring"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Spring_Blue_Jazz.png"
+},
+{
+  "name": "Cauliflower",
+  "price": 175,
+  "season": ["spring"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Spring_Cauliflower.png"
+},
+{
+  "name": "Garlic",
+  "price": 60,
+  "season": ["spring"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Spring_Garlic.png"
+},
+{
+  "name": "Kale",
+  "price": 110,
+  "season": ["spring"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Spring_Kale.png"
+},
+{
+  "name": "Parsnip",
+  "price": 35,
+  "season": ["spring"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Spring_Parsnip.png"
+},
+{
+  "name": "Potato",
+  "price": 80,
+  "season": ["spring"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Spring_Potato.png"
+},
+{
+  "name": "Rhubarb",
+  "price": 220,
+  "season": ["spring"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Spring_Rhubarb.png"
+},
+{
+  "name": "Tulip",
+  "price": 30,
+  "season": ["spring"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Spring_Tulip.png"
+},
+{
+  "name": "Unmilled Rice",
+  "price": 30,
+  "season": ["spring"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Spring_Unmilled_Rice.png"
+},
+{
+  "name": "Carrot",
+  "price": 35,
+  "season": ["spring"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Spring_Carrot.png"
+},
+{
+  "name": "Coffee Bean",
+  "price": 15,
+  "season": ["spring", "summer"],
+  "category":"crops",
+  "image":"assets/images/products/crops/SpringSummer_Coffee_Bean.png"
+},
+{
+  "name": "Green Bean",
+  "price": 40,
+  "season": ["spring"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Spring_Green_Bean.png"
+},
+{
+  "name": "Strawberry",
+  "price": 120,
+  "season": ["spring"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Spring_Strawberry.png"
+},
+{
+  "name": "Amaranth",
+  "price": 150,
+  "season": ["fall"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Fall_Amaranth.png"
+},
+{
+  "name": "Artichoke",
+  "price": 160,
+  "season": ["fall"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Fall_Artichoke.png"
+},
+{
+  "name": "Beet",
+  "price": 100,
+  "season": ["fall"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Fall_Beet.png"
+},
+{
+  "name": "Bok Choy",
+  "price": 80,
+  "season": ["fall"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Fall_Bok_Choy.png"
+},
+{
+  "name": "Fairy Rose",
+  "price": 290,
+  "season": ["fall"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Fall_Fairy_Rose.png"
+},
+{
+  "name": "Pumpkin",
+  "price": 320,
+  "season": ["fall"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Fall_Pumpkin.png"
+},
+{
+  "name": "Sunflower",
+  "price": 80,
+  "season": ["fall", "summer"],
+  "category":"crops",
+  "image":"assets/images/products/crops/FallSummer_Sunflower.png"
+},
+{
+  "name": "Sweet Gem Berry",
+  "price": 3000,
+  "season": ["fall"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Fall_Sweet_Gem_Berry.png"
+},
+{
+  "name": "Wheat",
+  "price": 25,
+  "season": ["fall","summer"],
+  "category":"crops",
+  "image":"assets/images/products/crops/FallSummer_Wheat.png"
+},
+{
+  "name": "Yam",
+  "price": 160,
+  "season": ["fall"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Fall_Yam.png"
+},
+{
+  "name": "Corn",
+  "price": 50,
+  "season": ["fall","summer"],
+  "category":"crops",
+  "image":"assets/images/products/crops/FallSummer_Corn.png"
+},
+{
+  "name": "Cranberries",
+  "price": 75,
+  "season": ["fall"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Fall_Cranberries.png"
+},
+{
+  "name": "Eggplant",
+  "price": 60,
+  "season": ["fall"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Fall_Eggplant.png"
+},
+{
+  "name": "Broccoli",
+  "price": 70,
+  "season": ["fall"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Fall_Broccoli.png"
+},
+{
+  "name": "Grape",
+  "price": 80,
+  "season": ["fall"],
+  "category":["crops","forage"],
+  "image":"assets/images/products/crops/Fall_Grape.png"
+},
+{
+  "name": "Powdermelon",
+  "price": 60,
+  "season": ["winter"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Winter_Powdermelon.png"
+},
+{
+  "name": "Melon",
+  "price": 250,
+  "season": ["summer"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Summer_Melon.png"
+},
+{
+  "name": "Poppy",
+  "price": 140,
+  "season": ["summer"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Summer_Poppy.png"
+},
+{
+  "name": "Radish",
+  "price": 90,
+  "season": ["summer"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Summer_Radish.png"
+},
+{
+  "name": "Red Cabbage",
+  "price": 260,
+  "season": ["summer"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Summer_Red_Cabbage.png"
+},
+{
+  "name": "Starfruit",
+  "price": 750,
+  "season": ["summer"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Summer_Starfruit.png"
+},
+{
+  "name": "Summer Spangle",
+  "price": 90,
+  "season": ["summer"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Summer_Spangle.png"
+},
+{
+  "name": "Blueberry",
+  "price": 50,
+  "season": ["summer"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Summer_Blueberry.png"
+},
+{
+  "name": "Hot Pepper",
+  "price": 40,
+  "season": ["summer"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Summer_Hot_Pepper.png"
+},
+{
+  "name": "Hops",
+  "price": 25,
+  "season": ["summer"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Summer_Hops.png"
+},
+{
+  "name": "Summer Squash",
+  "price": 45,
+  "season": ["summer"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Summer_Squash.png"
+},
+{
+  "name": "Tomato",
+  "price": 60,
+  "season": ["summer"],
+  "category":"crops",
+  "image":"assets/images/products/crops/Summer_Tomato.png"
+}
+
+]
