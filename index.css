@@ -25,7 +25,7 @@
   --forest-green: #408a31ff;
   --blue-green: #1597bdff;
   /*buttons*/
-  --earth-yellow: #FAE58Eff;
+  --earth-yellow: #fae58eff;
   --raw-umber: #a1623aff;
   --caf-noir: #4f301eff;
 }
@@ -45,7 +45,7 @@ body {
   color: #333;
   text-align: center;
   height: 500vh;
-  width:100vw;
+  width: 100vw;
   overflow: scroll;
 }
 
@@ -68,7 +68,7 @@ body {
   width: 100%;
   display: block;
 }*/
-.header-navbar{
+.header-navbar {
   min-height: 100%;
   width: 60%;
   background-image: url(/assets/images/backgrounds/header-background.png);
@@ -76,7 +76,7 @@ body {
   background-size: 100% 100%;
 }
 /* Navbar elements */
-.header-navbar-ul{
+.header-navbar-ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -86,17 +86,17 @@ body {
   width: 100%;
   padding: 2rem;
 }
-.navbar-li a{
+.navbar-li a {
   text-decoration: none;
   color: var(--caf-noir);
 }
 /*Shop Sections Navbar*/
 .navbar {
   background: transparent;
-  padding:0;
+  padding: 0;
   max-width: 100%;
   height: 20%;
-  display:block;
+  display: block;
 }
 .menu-button {
   background: transparent;
@@ -131,7 +131,7 @@ body {
   opacity: 0;
   transform: scale(0.9);
   transition: opacity 0.3s ease, transform 0.3s ease;
-  padding-top:1rem;
+  padding-top: 1rem;
 }
 
 .nav-item:hover .icon {
@@ -152,7 +152,6 @@ body {
   transform: scale(1);
 }
 
-
 /*Main Categories Section */
 .main {
   background-color: var(--earth-yellow);
@@ -162,60 +161,54 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-   /* layerlar için yeni koydum*/
-   position: relative;
-   z-index: 1;
-  
+  /* layerlar için yeni koydum*/
+  position: relative;
+  z-index: 1;
 }
-.section{
+.section {
   /* layerlar için height width değiştirdim düzelt*/
-  height:70vh;
+  height: 70vh;
   background-image: url(/assets/images/backgrounds/section-back.png);
   background-repeat: no-repeat;
-  background-size:100% 100%;
+  background-size: 100% 100%;
   background-position: center;
   width: 80%;
   border-radius: 0.3rem;
-  
 }
+
 /*Shop Sections Products Display*/
-
-.products-Ul{
+.products-Ul {
   padding: 0;
-  overflow-y:auto;
+  overflow-y: auto;
   max-height: 50vh;
-
 }
 .products-Ul li {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border:0.2rem solid var(--burnt-orange);
+  border: 0.2rem solid var(--burnt-orange);
   padding: 1rem 0;
 }
-.products-Ul li img{
+.products-Ul li img,
+.products-Ul li p {
   width: 2.5rem;
   height: 2.5rem;
 }
-.products-Ul li h3{
+.products-Ul li h3 {
   width: 7.5rem;
   height: 2.5rem;
 }
-.products-Ul li p{
-  width: 2.5rem;
-  height: 2.5rem;
-}
-.products-Ul li button{
+.products-Ul li button {
   width: 1.5rem;
   height: 1.5rem;
 }
-
-.div{
+.div {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
   height: 80%;
 }
+
 /*About us section -these will be done as rewievs 
 .avatar-div{
   background-image: url(portrait-blank.png);
@@ -244,20 +237,17 @@ body {
   /*background-image: url(winter.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  
-  
   daha sonra değitir çalıştığına bakmak için ekledim*/
   color: var(--caf-noir);
-
 }
 
 /*trying background layering*/
-.panel-div{
+.panel-div {
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
-  height: 1200px;/*it was '1000px' changed it to see if parallax animation working*/
+  height: 1200px; /*it was '1000px' changed it to see if parallax animation working*/
   overflow: hidden;
   z-index: -20;
 }
@@ -267,38 +257,38 @@ body {
   width: 100%;
   position: fixed;
 }*/
-.panel-layer{
-  height: 130vh;/*it was '100vh' changed it to see if parallax animation working*/
+.panel-layer {
+  height: 130vh; /*it was '100vh' changed it to see if parallax animation working*/
   width: 100%;
   position: fixed;
-  transform:translate3d(0px,0px,0px);
+  transform: translate3d(0px, 0px, 0px);
   background-repeat: no-repeat;
 }
-.layer{
+.layer {
   height: 1000px;
   width: 100%;
   z-index: -1;
-  
 }
-.layer0a{
+.layer0a {
   background-image: url(/assets/images/backgrounds/parallax1.png);
-  position: absolute;
-  
 }
-.layer0b{
+.layer0b {
   background-image: url(/assets/images/backgrounds/parallax2.png);
+}
+.layer0a,
+.layer0b {
   position: absolute;
 }
-.pixelated{
+.pixelated {
   image-rendering: optimizeSpeed;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: -o-crisp-edges;
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: pixelated;
-    image-rendering: optimize-contrast;
-    -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: pixelated;
+  image-rendering: optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
 }
-@keyframes slide{
+@keyframes slide {
   from {
     transform: translateX(0); /* Start off-screen to the right */
   }
@@ -306,51 +296,54 @@ body {
     transform: translateX(100%);
   }
 }
-.layer1{
+.layer1 {
   background-image: url(/assets/images/backgrounds/parallax3a.png);
-  animation: slide 80s linear infinite;
-  opacity: 0.2; 
 }
-.layer2{
+.layer2 {
   background-image: url(/assets/images/backgrounds/parallax3b.png);
+}
+.layer1,
+.layer2 {
   animation: slide 80s linear infinite;
   opacity: 0.2;
 }
-.layer3{
+.layer3 {
   background-image: url(/assets/images/backgrounds/parallax4.png);
-  background-position: bottom center;
 }
-.layer4{
+.layer4 {
   background-image: url(/assets/images/backgrounds/parallax5.png);
-  background-position: bottom center;
 }
-.layer5{
+.layer5 {
   background-image: url(/assets/images/backgrounds/parallax6.png);
-  background-position: bottom center;
 }
-.layer6{
+.layer6 {
   background-image: url(/assets/images/backgrounds/parallax7.png);
-  background-position: bottom center;
 }
-.layer7{
+.layer7 {
   background-image: url(/assets/images/backgrounds/parallax8.png);
+}
+.layer3,
+.layer4,
+.layer5,
+.layer6,
+.layer7,
+.divider {
   background-position: bottom center;
 }
-.layer8{
+.layer8 {
   background-image: url(/assets/images/backgrounds/parallax9.png);
   background-position: bottom left;
 }
-.layer9{
+.layer9 {
   background-image: url(/assets/images/backgrounds/parallax10.png);
   background-position: bottom right;
 }
 /*divider home*/
-.divider{
+.divider {
   background-image: url(/assets/images/backgrounds/sdv_divider.png);
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   position: relative;
-  background-position: bottom center;
   z-index: 20;
 }
