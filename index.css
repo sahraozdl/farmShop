@@ -55,19 +55,13 @@ body {
   color: white;
   height: 15vh;
   width: 100%;
-  /* layerlar için yeni koydum*/
+  /*added 4 lines below for layers*/
   position: fixed;
   z-index: 30;
   display: flex;
   justify-content: center;
 }
-/*
-.header-name{
-  height: 20%;
-  text-align: center;
-  width: 100%;
-  display: block;
-}*/
+
 .header-navbar {
   min-height: 100%;
   width: 60%;
@@ -134,20 +128,11 @@ body {
   padding-top: 1rem;
 }
 
-.nav-item:hover .icon {
+.nav-item:hover .icon, .nav-item.active .icon {
   transform: scale(1.2);
 }
 
-.nav-item:hover .text {
-  opacity: 1;
-  transform: scale(1);
-}
-/*there is no functon so they wont work*/
-.nav-item.active .icon {
-  transform: scale(1.2);
-}
-
-.nav-item.active .text {
+.nav-item:hover .text ,.nav-item.active .text  {
   opacity: 1;
   transform: scale(1);
 }
@@ -161,12 +146,12 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  /* layerlar için yeni koydum*/
+  /*added for layers*/
   position: relative;
   z-index: 1;
 }
 .section {
-  /* layerlar için height width değiştirdim düzelt*/
+  /*changed height for layers fix it later*/
   height: 70vh;
   background-image: url(/assets/images/backgrounds/section-back.png);
   background-repeat: no-repeat;
@@ -209,35 +194,12 @@ body {
   height: 80%;
 }
 
-/*About us section -these will be done as rewievs 
-.avatar-div{
-  background-image: url(portrait-blank.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 5rem;
-  height: 5rem;
-}
-.avatar{
-  width: 3.9rem;
-  height: 3.9rem;
-}
-.name{
-  background-image: url(blank-box.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 8rem;
-  height: 1.5rem;
-}*/
-
 /*Footer and Seasonal themes*/
 .footer {
   height: 20vh;
 }
 .winter {
-  /*background-image: url(winter.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  daha sonra değitir çalıştığına bakmak için ekledim*/
+  /*added to see if its work*/
   color: var(--caf-noir);
 }
 
@@ -251,12 +213,6 @@ body {
   overflow: hidden;
   z-index: -20;
 }
-/*
-.panel-div,.panel-layer{
-  height: 1000px;
-  width: 100%;
-  position: fixed;
-}*/
 .panel-layer {
   height: 130vh; /*it was '100vh' changed it to see if parallax animation working*/
   width: 100%;
