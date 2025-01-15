@@ -19,13 +19,12 @@
       <!--<h1 class="header-name">PURRFECT FARM</h1>-->
       <nav class="header-navbar" id="header-navbar">
         <ul class="header-navbar-ul">
-          <li class="navbar-li" id="search"><button id="search-btn">Search</button></li><!--not completed-->
           <li class="navbar-li" id="home"><a href="#home-section">HOME</a></li>
           <li class="navbar-li" id="about"><a href="#about-section">ABOUT US</a></li>
           <li class="navbar-li" id="services"><a href="#services-section">SERVICES</a></li>
           <li class="navbar-li" id="shop"><a href="#shop-section">SHOP</a></li>
           <li class="navbar-li" id="contact"><a href="#contact-section">CONTACT US</a></li>
-          <li class="navbar-li" id="cart"><button id="cart-btn">Cart</button></li><!--not completed-->
+          <li class="navbar-li" id="cart"><button id="cart-btn" class="navbar-btn cart-btn"><img src="assets/images/shopping-cart.png" alt="shopping cart icon" class="navbar-li-icon"/></button></li><!--not completed-->
         </ul>
       </nav>
     </header>
@@ -46,9 +45,9 @@
         <div class="panel-layer pixelated layer8" data-speed="-1"></div>
         <div class="panel-layer pixelated layer9" data-speed="-1"></div>
         <div class="panel-layer pixelated divider" data-speed="-0.00001"></div>
-      </div> 
+      </div>
     <main class="main" id="main">
-      <section class="section home-section" id="home-section">
+        <section class="section home-section" id="home-section">
         <h2 class="h2">FRESH PRODUCTS FROM PELICAN TOWN'S FINEST FARM</h2>
         <h3 class="h3">Welcome to Purrfect Farm, where every day is an adventure, and every harvest is a celebration of life!</h3>
         <p>Experience the charm of Stardew Valley right here on our farm. From seasonal crops to fresh animal products, we bring the valley’s best straight to you.</p>
@@ -81,26 +80,31 @@
       
           <div class="div carousel-track" role="group" aria-labelledby="services-heading">
             <!-- Each slide represents a service -->
-            <article class="carousel-slide" id="service-rock-removal" tabindex="0">
-              <h3>Rock Removal</h3>
-              <p>Clear out those pesky boulders to expand your farmland.</p>
-            </article>
-            <article class="carousel-slide" id="service-tree-clearing" tabindex="0">
-              <h3>Tree Clearing</h3>
-              <p>Remove unwanted trees or branches to make room for new crops.</p>
-            </article>
-            <article class="carousel-slide" id="service-soil-tilling" tabindex="0">
-              <h3>Soil Tilling</h3>
-              <p>Prepare your soil for planting with expert tilling services.</p>
-            </article>
-            <article class="carousel-slide" id="service-watering-assistance" tabindex="0">
-              <h3>Watering Assistance</h3>
+              <div class="service">
+                <img src="assets/carousel/Pickaxe.png" alt="a pixelated pickaxe icon" class="service-icon"/>
+              <h3 class="service-h3">Rock Removal</h3>
+              <p class="service-p">Clear out those pesky boulders to expand your farmland.</p>
+            </div>
+            <div class="service hidden">
+              <img src="assets/carousel/Axe.png" alt="a pixelated axe icon" class="service-icon"/>
+              <h3 class="service-h3">Tree Clearing</h3>
+              <p class="service-p">Remove unwanted trees or branches to make room for new crops.</p>
+            </div>
+            <div class="service hidden">
+              <img src="assets/carousel/Hoe.png" alt="a pixelated hoe icon" class="service-icon"/>
+              <h3 class="service-h3">Soil Tilling</h3>
+              <p class="service-p">Prepare your soil for planting with expert tilling services.</p>
+            </div>
+            <div class="service hidden">
+              <img src="assets/carousel/Watering_Can.png" alt="a pixelated watering can icon" class="service-icon"/>
+              <h3 class="service-h3">Watering Assistance</h3>
               <p>Ensure your plants never go thirsty, even during busy seasons.</p>
-            </article>
-            <article class="carousel-slide" id="service-pathway-building" tabindex="0">
-              <h3>Pathway Building</h3>
-              <p>Lay down new pathways to organize and beautify your farm.</p>
-            </article>
+            </div>
+            <div class="service hidden">
+              <img src="assets/carousel/Cobblestone_Path.png" alt="a pixelated cobblestone path icon" class="service-icon"/>
+              <h3 class="service-h3">Pathway Building</h3>
+              <p class="service-p">Lay down new pathways to organize and beautify your farm.</p>
+            </div>
           </div>
       
           <button class="carousel-control next" aria-label="Next service">&#9654;</button>
@@ -109,6 +113,18 @@
       
       <section class="section main_products-section" id="shop-section">   <nav class="navbar">
         <ul class="nav-list">
+          <li>
+            <button 
+            id="search-btn" 
+            class="menu-button nav-item"
+            >
+            <img
+             src="assets/images/search-icon.png" 
+             alt="search icon" 
+             class="icon"
+             />
+            </button>
+          </li><!--not completed-->
           <li>
             <button
               id="seasonal"
