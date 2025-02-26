@@ -4,14 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Purrfect Farm</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/chicken_favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/chicken_favicon-16x16.png">
-    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/chicken_favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/chicken_favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
     <link rel="stylesheet" href="index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=VT323&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=VT323&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body id="body">
@@ -20,201 +37,349 @@
       <nav class="header-navbar" id="header-navbar">
         <ul class="header-navbar-ul">
           <li class="navbar-li" id="home"><a href="#home-section">HOME</a></li>
-          <li class="navbar-li" id="about"><a href="#about-section">ABOUT US</a></li>
-          <li class="navbar-li" id="services"><a href="#services-section">SERVICES</a></li>
+          <li class="navbar-li" id="about">
+            <a href="#about-section">ABOUT US</a>
+          </li>
+          <li class="navbar-li" id="services">
+            <a href="#services-section">SERVICES</a>
+          </li>
           <li class="navbar-li" id="shop"><a href="#shop-section">SHOP</a></li>
-          <li class="navbar-li" id="contact"><a href="#contact-section">CONTACT US</a></li>
-          <li class="navbar-li" id="cart"><button id="cart-btn" class="navbar-btn cart-btn"><img src="assets/images/shopping-cart.png" alt="shopping cart icon" class="navbar-li-icon"/></button></li><!--not completed-->
+          <li class="navbar-li" id="contact">
+            <a href="#contact-section">CONTACT US</a>
+          </li>
+          <li class="navbar-li" id="cart">
+            <button id="cart-btn" class="navbar-btn cart-btn">
+              <img
+                src="assets/images/shopping-cart.png"
+                alt="shopping cart icon"
+                class="navbar-li-icon"
+              />
+            </button>
+          </li>
+
+          <!--not completed-->
         </ul>
       </nav>
     </header>
     <div class="mainLogo">
-      <img class="mainLogoImage" src="assets/images/main-logo1152x384.png" alt="a logo of a farm name'Purrfect Farm'" role="text">
+      <img
+        class="mainLogoImage"
+        src="assets/images/main-logo1152x384.png"
+        alt="a logo of a farm name'Purrfect Farm'"
+        role="text"
+      />
     </div>
-      <!--For background animations and layering -->
-      <div id="parallax-container" class="panel-div">
-        <div class="layer0a layer pixelated"></div>
-        <div class="layer0b layer pixelated"></div>
-        <div class="panel-layer pixelated layer1" data-speed="-0.15"></div>
-        <div class="panel-layer pixelated layer2" data-speed="-0.15"></div>
-        <div class="panel-layer pixelated layer3" data-speed="-0.65"></div>
-        <div class="panel-layer pixelated layer4" data-speed="-0.70"></div>
-        <div class="panel-layer pixelated layer5" data-speed="-0.78"></div>
-        <div class="panel-layer pixelated layer6" data-speed="-0.89"></div>
-        <div class="panel-layer pixelated layer7" data-speed="-1"></div>
-        <div class="panel-layer pixelated layer8" data-speed="-1"></div>
-        <div class="panel-layer pixelated layer9" data-speed="-1"></div>
-        <div class="panel-layer pixelated divider" data-speed="-0.00001"></div>
-      </div>
+    <!--For background animations and layering -->
+    <div id="parallax-container" class="panel-div">
+      <div class="layer0a layer pixelated"></div>
+      <div class="layer0b layer pixelated"></div>
+      <div class="panel-layer pixelated layer1" data-speed="-0.15"></div>
+      <div class="panel-layer pixelated layer2" data-speed="-0.15"></div>
+      <div class="panel-layer pixelated layer3" data-speed="-0.65"></div>
+      <div class="panel-layer pixelated layer4" data-speed="-0.70"></div>
+      <div class="panel-layer pixelated layer5" data-speed="-0.78"></div>
+      <div class="panel-layer pixelated layer6" data-speed="-0.89"></div>
+      <div class="panel-layer pixelated layer7" data-speed="-1"></div>
+      <div class="panel-layer pixelated layer8" data-speed="-1"></div>
+      <div class="panel-layer pixelated layer9" data-speed="-1"></div>
+      <div class="panel-layer pixelated divider" data-speed="-0.00001"></div>
+    </div>
     <main class="main" id="main">
-        <section class="section home-section" id="home-section">
+      <section class="section home-section" id="home-section">
         <h2 class="h2">FRESH PRODUCTS FROM PELICAN TOWN'S FINEST FARM</h2>
-        <h3 class="h3">Welcome to Purrfect Farm, where every day is an adventure, and every harvest is a celebration of life!</h3>
-        <p>Experience the charm of Stardew Valley right here on our farm. From seasonal crops to fresh animal products, we bring the valley’s best straight to you.</p>
-        <p>
-          Check out the video below to learn more about the world of Stardew Valley and the inspiration behind our farm</p>
-          <div id="stardewvideo" class="video-responsive">
-            <iframe src="https://www.youtube.com/embed/ot7uXNQskhs"
-             frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-          </div>
+        <h3 class="h3">
+          Welcome to Purrfect Farm, where every day is an adventure, and every
+          harvest is a celebration of life!
+        </h3>
+        <p class="p">
+          Experience the charm of Stardew Valley right here on our farm. From
+          seasonal crops to fresh animal products, we bring the valley’s best
+          straight to you.
+        </p>
+        <p class="p">
+          Check out the video below to learn more about the world of Stardew
+          Valley and the inspiration behind our farm
+        </p>
+        <div id="stardewvideo" class="video-responsive">
+          <iframe
+            src="https://www.youtube.com/embed/ot7uXNQskhs"
+            frameborder="0"
+            allowfullscreen="allowfullscreen"
+          ></iframe>
+        </div>
       </section>
       <section class="section about-section" id="about-section">
         <div class="div">
-        <h2 class="h2">ABOUT US</h2>
-        <p class="p">Here at Purrfect Farm, we believe in the harmony of nature, the magic of hard work, and the warmth of a community. Whether it’s the sweet scent of freshly foraged fruits, the gentle clucking of chickens, or the serene purr of a farm cat lounging in the sun, every corner of the farm tells a story of care and passion.
-
-          We invite you to explore the farm, enjoy the bounty of our harvest, and become a part of our ever-growing family. Thank you for supporting our dream and choosing us.
-          </p></div>
-          <!-- rewievs ex.
+          <h2 class="h2">ABOUT US</h2>
+          <p class="p">
+            Here at Purrfect Farm, we believe in the harmony of nature, the
+            magic of hard work, and the warmth of a community. Whether it’s the
+            sweet scent of freshly foraged fruits, the gentle clucking of
+            chickens, or the serene purr of a farm cat lounging in the sun,
+            every corner of the farm tells a story of care and passion. We
+            invite you to explore the farm, enjoy the bounty of our harvest, and
+            become a part of our ever-growing family. Thank you for supporting
+            our dream and choosing us.
+          </p>
+        </div>
+        <!-- rewievs ex.
           <div class="avatar-div">
           <img  class="avatar"></div>
           <p class="name">Sahra</p>
         -->
       </section>
-      <section class="section services-section" id="services-section" aria-labelledby="services-heading">
-        <h2 id="services-heading">Services</h2>
-        <p>Your farm's needs, expertly handled with care and efficiency.</p>
-        
-        <div class="carousel" aria-roledescription="carousel" aria-live="polite">
-          <button class="carousel-control prev" aria-label="Previous service">&#9664;</button>
-      
-          <div class="div carousel-track" role="group" aria-labelledby="services-heading">
+      <section
+        class="section services-section"
+        id="services-section"
+        aria-labelledby="services-heading"
+      >
+        <h2 id="services-heading" class="h2">SERVICES</h2>
+        <p class="p">
+          Your farm's needs, expertly handled with care and efficiency.
+        </p>
+
+        <div
+          class="carousel"
+          aria-roledescription="carousel"
+          aria-live="polite"
+        >
+          <button
+            class="carousel-control prev"
+            aria-label="Previous service"
+            id="prev"
+          >
+            &#9664;
+          </button>
+
+          <div
+            class="div carousel-track"
+            role="group"
+            aria-labelledby="services-heading"
+          >
             <!-- Each slide represents a service -->
-              <div class="service">
-                <img src="assets/carousel/Pickaxe.png" alt="a pixelated pickaxe icon" class="service-icon"/>
-              <h3 class="service-h3">Rock Removal</h3>
-              <p class="service-p">Clear out those pesky boulders to expand your farmland.</p>
+            <div class="service">
+              <img
+                src="assets/carousel/Pickaxe.png"
+                alt="a pixelated pickaxe icon"
+                class="service-icon"
+              />
+              <div class="service-text">
+                <h3 class="service-h3">Rock Removal</h3>
+                <p class="service-p">
+                  Clear out those pesky boulders to expand your farmland.
+                </p>
+              </div>
             </div>
             <div class="service hidden">
-              <img src="assets/carousel/Axe.png" alt="a pixelated axe icon" class="service-icon"/>
-              <h3 class="service-h3">Tree Clearing</h3>
-              <p class="service-p">Remove unwanted trees or branches to make room for new crops.</p>
+              <img
+                src="assets/carousel/Axe.png"
+                alt="a pixelated axe icon"
+                class="service-icon"
+              />
+              <div class="service-text">
+                <h3 class="service-h3">Tree Clearing</h3>
+                <p class="service-p">
+                  Remove unwanted trees or branches to make room for new crops.
+                </p>
+              </div>
             </div>
             <div class="service hidden">
-              <img src="assets/carousel/Hoe.png" alt="a pixelated hoe icon" class="service-icon"/>
-              <h3 class="service-h3">Soil Tilling</h3>
-              <p class="service-p">Prepare your soil for planting with expert tilling services.</p>
+              <img
+                src="assets/carousel/Hoe.png"
+                alt="a pixelated hoe icon"
+                class="service-icon"
+              />
+              <div class="service-text">
+                <h3 class="service-h3">Soil Tilling</h3>
+                <p class="service-p">
+                  Prepare your soil for planting with expert tilling services.
+                </p>
+              </div>
             </div>
             <div class="service hidden">
-              <img src="assets/carousel/Watering_Can.png" alt="a pixelated watering can icon" class="service-icon"/>
-              <h3 class="service-h3">Watering Assistance</h3>
-              <p>Ensure your plants never go thirsty, even during busy seasons.</p>
+              <img
+                src="assets/carousel/Watering_Can.png"
+                alt="a pixelated watering can icon"
+                class="service-icon"
+              />
+              <div class="service-text">
+                <h3 class="service-h3">Watering Assistance</h3>
+                <p class="service-p">
+                  Ensure your plants never go thirsty, even during busy seasons.
+                </p>
+              </div>
             </div>
             <div class="service hidden">
-              <img src="assets/carousel/Cobblestone_Path.png" alt="a pixelated cobblestone path icon" class="service-icon"/>
-              <h3 class="service-h3">Pathway Building</h3>
-              <p class="service-p">Lay down new pathways to organize and beautify your farm.</p>
+              <img
+                src="assets/carousel/Cobblestone_Path.png"
+                alt="a pixelated cobblestone path icon"
+                class="service-icon"
+              />
+              <div class="service-text">
+                <h3 class="service-h3">Pathway Building</h3>
+                <p class="service-p">
+                  Lay down new pathways to organize and beautify your farm.
+                </p>
+              </div>
             </div>
           </div>
-      
-          <button class="carousel-control next" aria-label="Next service">&#9654;</button>
+
+          <button
+            class="carousel-control next"
+            aria-label="Next service"
+            id="next"
+          >
+            &#9654;
+          </button>
         </div>
       </section>
-      
-      <section class="section main_products-section" id="shop-section">   <nav class="navbar">
-        <ul class="nav-list">
-          <li>
-            <button 
-            id="search-btn" 
-            class="menu-button nav-item"
-            >
-            <img
-             src="assets/images/search-icon.png" 
-             alt="search icon" 
-             class="icon"
-             />
-            </button>
-          </li><!--not completed-->
-          <li>
-            <button
-              id="seasonal"
-              class="menu-button nav-item"
-              data-category="seasonal-crops"
-            >
-              <img
-                src="\assets\images\products\navbar_icons\Seasonal_Icon.png"
-                alt="Seasonal Icon"
-                class="icon"
+
+      <section class="section main_products-section" id="shop-section">
+        <nav class="navbar">
+          <ul class="nav-list">
+            <!--not completed-->
+            <li>
+              <button
+                id="seasonal"
+                class="menu-button nav-item"
+                data-category="seasonal-crops"
+              >
+                <img
+                  src="\assets\images\products\navbar_icons\Seasonal_Icon.png"
+                  alt="Seasonal Icon"
+                  class="icon"
+                />
+                <span class="text">Seasonal Crops</span>
+              </button>
+            </li>
+            <li>
+              <button
+                id="greenhouse"
+                class="menu-button nav-item"
+                data-category="greenhouse-crops"
+              >
+                <img
+                  src="\assets\images\products\navbar_icons\Greenhouse_Icon.png"
+                  alt="Greenhouse Icon"
+                  class="icon"
+                /><span class="text">Greenhouse Crops</span>
+              </button>
+            </li>
+            <li>
+              <button
+                id="animal"
+                class="menu-button nav-item"
+                data-category="animal-products"
+              >
+                <img
+                  src="\assets\images\products\navbar_icons\Animal_Icon.png"
+                  alt="Animal Icon"
+                  class="icon"
+                />
+                <span class="text">Animal Products</span>
+              </button>
+            </li>
+            <li>
+              <button
+                id="artisan"
+                class="menu-button nav-item"
+                data-category="artisan-goods"
+              >
+                <img
+                  src="\assets\images\products\navbar_icons\Artisan_Icon.png"
+                  alt="Artisan Icon"
+                  class="icon"
+                />
+                <span class="text">Artisan Goods</span>
+              </button>
+            </li>
+            <li>
+              <button
+                id="foraged"
+                class="menu-button nav-item"
+                data-category="foraged-items"
+              >
+                <img
+                  src="\assets\images\products\navbar_icons\Forage_Icon.png"
+                  alt="Forage Icon"
+                  class="icon"
+                />
+                <span class="text">Foraged Items</span>
+              </button>
+            </li>
+            <li>
+              <button
+                id="seafood"
+                class="menu-button nav-item"
+                data-category="seafoods"
+              >
+                <img
+                  src="\assets\images\products\navbar_icons\Seafood_Icon.png"
+                  alt="Seafood Icon"
+                  class="icon"
+                />
+                <span class="text">Fish & Seafood</span>
+              </button>
+            </li>
+            <li class="search-container">
+              <button id="search-btn" class="menu-button nav-item">
+                <img
+                  src="assets/images/search-icon.png"
+                  alt="Search"
+                  class="icon"
+                />
+              </button>
+              <input
+                type="text"
+                id="search-input"
+                class="collapsed"
+                placeholder="Search products..."
               />
-              <span class="text">Seasonal Crops</span>
-            </button>
-          </li>
-          <li>
-            <button
-              id="greenhouse"
-              class="menu-button nav-item"
-              data-category="greenhouse-crops"
-            >
-              <img
-                src="\assets\images\products\navbar_icons\Greenhouse_Icon.png"
-                alt="Greenhouse Icon"
-                class="icon"
-              /><span class="text">Greenhouse Crops</san>
-            </button>
-          </li>
-          <li>
-            <button
-              id="animal"
-              class="menu-button nav-item"
-              data-category="animal-products"
-            >
-              <img
-                src="\assets\images\products\navbar_icons\Animal_Icon.png"
-                alt="Animal Icon"
-                class="icon"
-              />
-              <span class="text">Animal Products</span>
-            </button>
-          </li>
-          <li>
-            <button
-              id="artisan"
-              class="menu-button nav-item"
-              data-category="artisan-goods"
-            >
-              <img
-                src="\assets\images\products\navbar_icons\Artisan_Icon.png"
-                alt="Artisan Icon"
-                class="icon"
-              />
-              <span class="text">Artisan Goods</span>
-            </button>
-          </li>
-          <li>
-            <button
-              id="foraged"
-              class="menu-button nav-item"
-              data-category="foraged-items"
-            >
-              <img
-                src="\assets\images\products\navbar_icons\Forage_Icon.png"
-                alt="Forage Icon"
-                class="icon"
-              />
-              <span class="text">Foraged Items</span>
-            </button>
-          </li>
-          <li>
-            <button
-              id="seafood"
-              class="menu-button nav-item"
-              data-category="seafoods"
-            >
-              <img src="\assets\images\products\navbar_icons\Seafood_Icon.png"
-                alt="Seafood Icon"
-                class="icon"
-              />
-              <span class="text">Fish & Seafood</span>
-            </button>
-          </li>
-        </ul>
-      </nav>
-      <div class="product-div" id="product-section"></div>
-    </section>
+              <button id="close-search" class="collapsed">&times;</button>
+            </li>
+          </ul>
+        </nav>
+        <div class="product-div" id="product-section"></div>
+      </section>
     </main>
 
-    <footer class="footer" id="contact-section">
-      <p>© 2024 Pelican Town Farm. All rights reserved.</p>
+    <footer class="footer contact-section" id="contact-section">
+      <div class="contact-container section">
+        <h2 class="h2">CONTACT US</h2>
+        <div class="contact-info-div">
+          <img src="assets/images/avatar.jpg  " alt="avatar" class="avatar" />
+          <div class="contact-info">
+            <p><strong> Address:</strong> 123 Farm Lane, Pelican Town</p>
+            <p><strong> Phone:</strong> +1 (555) 123-4567</p>
+            <p><strong> Email:</strong> contact@pelicanfarms.com</p>
+            <p><strong> Hours:</strong> Mon-Sat: 8 AM - 6 PM | Sun: Closed</p>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <p>© 2024 Pelican Town Farm. All rights reserved.</p>
+      </div>
     </footer>
 
     <script src="index.js"></script>

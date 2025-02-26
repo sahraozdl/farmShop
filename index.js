@@ -1,8 +1,6 @@
 let cachedSeason = null; // Cache the season for reuse
-const homeBtn =document.getElementById("home");
-const mainHome =document.getElementById("home-section");
-
-
+const homeBtn = document.getElementById("home");
+const mainHome = document.getElementById("home-section");
 
 const dataSources = {
   foraged: "./foragedProducts.json",
@@ -112,58 +110,58 @@ function filterProducts(category, season = null) {
 const productList = document.querySelector("#product-section");
 // Render products to the DOM
 function renderProducts(products) {
-
   if (!productList) {
     console.error("No #product-section element found in the DOM.");
     return;
   }
-  productList.classList.add("display")
+  productList.classList.add("display");
   productList.innerHTML = ""; // Clear previous items
-    const ul = document.createElement("ul");
-    productList.appendChild(ul);
-    ul.classList.add("products-Ul");
+  const ul = document.createElement("ul");
+  productList.appendChild(ul);
+  ul.classList.add("products-Ul");
   products.forEach((product) => {
     const listItem = document.createElement("li");
     const img = document.createElement("img");
     const h3 = document.createElement("h3");
     const p = document.createElement("p");
-    const btn =document.createElement("button");
-    img.src =`${product.image}`;
+    const btn = document.createElement("button");
+    const coinImg = document.createElement("img");
+    coinImg.src = "assets/images/27px-Gold.png";
+    coinImg.alt = "coin";
+    coinImg.classList.add("price-icon");
+    img.src = `${product.image}`;
     img.alt = `${product.name}`;
-    h3.innerText =`${product.name}`;
-    p.innerText =`${product.price}`;
-    btn.innerText ="+";
+    h3.innerText = `${product.name}`;
+    p.innerText = `${product.price}`;
+
+    btn.innerText = "+";
     ul.appendChild(listItem);
     listItem.appendChild(img);
     listItem.appendChild(h3);
     listItem.appendChild(p);
+    p.appendChild(coinImg);
     listItem.appendChild(btn);
   });
 }
 
-
-
-
 // Setup category click listeners
 function setupCategoryListeners() {
   const navItems = document.querySelectorAll(".nav-item");
-  
+
   navItems.forEach((item) => {
     console.log("Adding listener to:", item);
     item.addEventListener("click", () => {
       navItems.forEach((navItem) => navItem.classList.remove("active"));
-      
+
       item.classList.add("active");
-      
+
       const category = item.dataset.category;
-      
+
       const season = cachedSeason;
 
       const filteredProducts = filterProducts(category, season);
 
-      
       renderProducts(filteredProducts);
-      
     });
   });
 }
@@ -177,7 +175,6 @@ homeBtn.addEventListener("click",()=>{
   }
 });*/
 
-
 /*
 function showSection(targetId) {
   const sections = document.querySelectorAll(".section");
@@ -190,35 +187,114 @@ function showSection(targetId) {
   });
 }*/
 
-
 // Setup navbar click listeners
 function setupNavbarListeners() {
   const navItems = document.querySelectorAll(" .navbar-li ");
   navItems.forEach((item) => {
-    const targetId = item.getAttribute("href").slice(1);
-    item.addEventListener("click", (event) => {
-      event.preventDefault();
-     //showSection(targetId);
-    });
+    const href = item.getAttribute("href");
+    if (href) {
+      const targetId = href.slice(1);
+      item.addEventListener("click", (event) => {
+        event.preventDefault();
+        showSection(targetId);
+      });
+    }
   });
+}
+
+// Function to handle carousel navigation
+function setupCarousel() {
+  const prevButton = document.getElementById("prev");
+  const nextButton = document.getElementById("next");
+  const carouselTrack = document.querySelector(".carousel-track");
+  const services = Array.from(carouselTrack.children);
+  let currentIndex = 0;
+
+  console.log("Carousel setup initialized");
+
+  function updateCarousel() {
+    services.forEach((service, index) => {
+      if (index === currentIndex) {
+        service.classList.remove("hidden");
+        service.style.opacity = "1";
+        service.style.visibility = "visible";
+      } else {
+        service.classList.add("hidden");
+        service.style.opacity = "0";
+        service.style.visibility = "hidden";
+      }
+    });
+  }
+
+  prevButton.addEventListener("click", () => {
+    console.log("Previous button clicked");
+    currentIndex = (currentIndex - 1 + services.length) % services.length;
+    updateCarousel();
+  });
+
+  nextButton.addEventListener("click", () => {
+    console.log("Next button clicked");
+    currentIndex = (currentIndex + 1) % services.length;
+    updateCarousel();
+  });
+
+  updateCarousel(); // Initialize the carousel
 }
 
 // Initialization
 document.addEventListener("DOMContentLoaded", () => {
-  cachedSeason = getCurrentSeason(); 
+  cachedSeason = getCurrentSeason();
   // Set the current season
-  applySeasonalTheme(); 
+  applySeasonalTheme();
   // Apply the seasonal theme
   preloadData().then(() => {
     //showSection("home-section");
-    setupCategoryListeners(); 
+    setupCategoryListeners();
+    // Set up category listeners
+    setupNavbarListeners();
     // Set up navbar listeners
-    
-    setupNavbarListeners(); // Set up navbar listeners
+    setupCarousel();
+    // Set up carousel functionality
     /*showSection('#parallax-container'); //Show background by default doesnt work?*/
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const searchBtn = document.getElementById("search-btn");
+  const searchInput = document.getElementById("search-input");
+  const closeSearch = document.getElementById("close-search");
+  const searchContainer = document.querySelector(".search-container");
+  const productList = document.querySelector("#product-section");
 
+  // Expand search input
+  searchBtn.addEventListener("click", () => {
+    searchContainer.classList.add("search-expanded");
+    searchInput.focus();
+  });
 
+  // Close search input
+  closeSearch.addEventListener("click", () => {
+    searchContainer.classList.remove("search-expanded");
+    searchInput.value = ""; // Clear input
+    renderProducts([]); // Optionally clear the displayed products
+  });
 
+  // Live search functionality
+  searchInput.addEventListener("input", () => {
+    const query = searchInput.value.toLowerCase();
+    if (query.trim() === "") return renderProducts([]); // Clear results if empty
+
+    const filteredProducts = Object.values(allProducts)
+      .flat()
+      .filter((product) => product.name.toLowerCase().includes(query));
+
+    renderProducts(filteredProducts);
+  });
+});
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent actual submission
+    alert("Thank you! We'll get back to you soon.");
+    this.reset();
+  });
