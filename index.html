@@ -48,13 +48,19 @@
             <a href="#contact-section">CONTACT US</a>
           </li>
           <li class="navbar-li" id="cart">
-            <button id="cart-btn" class="navbar-btn cart-btn">
+            <button id="cart-icon" class="navbar-btn cart-btn">
               <img
                 src="assets/images/shopping-cart.png"
                 alt="shopping cart icon"
                 class="navbar-li-icon"
               />
+              <span id="cart-count" class="cart-count">0</span>
             </button>
+            <div id="cart-container" class="hidden">
+              <h3>Order List</h3>
+              <ul id="cart-list"></ul>
+              <p id="cart-total">Total: 0g</p>
+            </div>
           </li>
 
           <!--not completed-->
@@ -86,20 +92,22 @@
     </div>
     <main class="main" id="main">
       <section class="section home-section" id="home-section">
-        <h2 class="h2">FRESH PRODUCTS FROM PELICAN TOWN'S FINEST FARM</h2>
-        <h3 class="h3">
-          Welcome to Purrfect Farm, where every day is an adventure, and every
-          harvest is a celebration of life!
-        </h3>
-        <p class="p">
-          Experience the charm of Stardew Valley right here on our farm. From
-          seasonal crops to fresh animal products, we bring the valley’s best
-          straight to you.
-        </p>
-        <p class="p">
-          Check out the video below to learn more about the world of Stardew
-          Valley and the inspiration behind our farm
-        </p>
+        <div class="home-info">
+          <h2 class="h2">FRESH PRODUCTS FROM PELICAN TOWN'S FINEST FARM</h2>
+          <h3 class="h3">
+            Welcome to Purrfect Farm, where every day is an adventure, and every
+            harvest is a celebration of life!
+          </h3>
+          <p class="p">
+            Experience the charm of Stardew Valley right here on our farm. From
+            seasonal crops to fresh animal products, we bring the valley’s best
+            straight to you.
+          </p>
+          <p class="p">
+            Check out the video for learning more about the world of Stardew
+            Valley and the inspiration behind our farm!
+          </p>
+        </div>
         <div id="stardewvideo" class="video-responsive">
           <iframe
             src="https://www.youtube.com/embed/ot7uXNQskhs"
@@ -373,10 +381,10 @@
           <textarea
             id="message"
             name="message"
-            placeholder="Your Message"
+            placeholder="Your Address and Order Details..."
             required
           ></textarea>
-          <button type="submit">Send Message</button>
+          <button type="submit">Place Order</button>
         </form>
         <p>© 2024 Pelican Town Farm. All rights reserved.</p>
       </div>

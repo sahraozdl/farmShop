@@ -2,6 +2,12 @@ let cachedSeason = null; // Cache the season for reuse
 const homeBtn = document.getElementById("home");
 const mainHome = document.getElementById("home-section");
 
+const cart = [];
+const cartContainer = document.getElementById("cart-container"); // Ensure this exists in your HTML
+const cartList = document.getElementById("cart-list"); // The UL inside cart
+const cartTotal = document.getElementById("cart-total"); // Total price display
+const cartIcon = document.getElementById("cart-icon"); // Cart button to toggle visibility
+
 const dataSources = {
   foraged: "./foragedProducts.json",
   crops: "./cropsProducts.json",
@@ -133,9 +139,8 @@ function renderProducts(products) {
     img.alt = `${product.name}`;
     h3.innerText = `${product.name}`;
     p.innerText = `${product.price}g`;
-
     btn.innerText = "+";
-    //btn.addEventListener("click", addToCart(product));
+    btn.addEventListener("click", () => addToCart(product));
     ul.appendChild(listItem);
     listItem.appendChild(img);
     listItem.appendChild(h3);
@@ -299,3 +304,39 @@ document
     alert("Thank you! We'll get back to you soon.");
     this.reset();
   });
+
+function addToCart(product) {
+  const existingItem = cart.find((item) => item.name === product.name);
+
+  if (existingItem) {
+    existingItem.quantity += 1;
+  } else {
+    cart.push({ ...product, quantity: 1 });
+  }
+
+  updateCartDisplay();
+  cartContainer.classList.add("visible"); // Show cart when item is added
+}
+
+function updateCartDisplay() {
+  cartList.innerHTML = ""; // Clear previous items
+  let totalPrice = 0;
+
+  cart.forEach((item) => {
+    const listItem = document.createElement("li");
+    listItem.innerHTML = `
+      <img src="${item.image}" alt="${item.name}" class="cart-img">
+      <span style="margin-right: 10px;">${item.name} x ${item.quantity}</span> 
+      <span style="margin-right: 10px;">${item.price * item.quantity}g</span>
+      `;
+    cartList.appendChild(listItem);
+    totalPrice += item.price * item.quantity;
+  });
+
+  cartTotal.innerText = `Total: ${totalPrice}g`;
+}
+
+// Toggle cart visibility when clicking the cart icon
+cartIcon.addEventListener("click", () => {
+  cartContainer.classList.toggle("visible");
+});
