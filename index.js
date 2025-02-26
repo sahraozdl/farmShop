@@ -8,6 +8,17 @@ const cartList = document.getElementById("cart-list"); // The UL inside cart
 const cartTotal = document.getElementById("cart-total"); // Total price display
 const cartIcon = document.getElementById("cart-icon"); // Cart button to toggle visibility
 
+const formInputs = {
+  name: document.querySelector("#name"),
+  email: document.querySelector("#email"),
+  message: document.querySelector("#message"),
+};
+
+const closeCart = document.getElementById("close-cart-btn");
+closeCart.addEventListener("click", () => {
+  cartContainer.classList.remove("visible");
+});
+
 const dataSources = {
   foraged: "./foragedProducts.json",
   crops: "./cropsProducts.json",
@@ -300,9 +311,14 @@ document.addEventListener("DOMContentLoaded", () => {
 document
   .getElementById("contact-form")
   .addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent actual submission
-    alert("Thank you! We'll get back to you soon.");
-    this.reset();
+    if (cart.length === 0) {
+      alert("You didn’t place an order");
+      return;
+    } else {
+      event.preventDefault(); // Prevent actual submission
+      alert("Thank you! We'll get back to you soon.");
+      this.reset();
+    }
   });
 
 function addToCart(product) {
@@ -334,6 +350,27 @@ function updateCartDisplay() {
   });
 
   cartTotal.innerText = `Total: ${totalPrice}g`;
+  const checkoutBtn = document.createElement("button");
+  cartList.appendChild(checkoutBtn);
+  checkoutBtn.innerText = "Checkout";
+  checkoutBtn.classList.add("checkout-btn");
+  checkoutBtn.addEventListener("click", () => {
+    if (cart.length === 0) {
+      alert("You didn’t place an order");
+      return;
+    }
+
+    for (let key in formInputs) {
+      if (!formInputs[key].value.trim()) {
+        alert("Please fill out all required fields");
+        return;
+      }
+    }
+
+    alert("Order list sent successfully!");
+    cart = [];
+    //cart doesnt reset
+  });
 }
 
 // Toggle cart visibility when clicking the cart icon
