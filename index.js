@@ -132,9 +132,10 @@ function renderProducts(products) {
     img.src = `${product.image}`;
     img.alt = `${product.name}`;
     h3.innerText = `${product.name}`;
-    p.innerText = `${product.price}`;
+    p.innerText = `${product.price}g`;
 
     btn.innerText = "+";
+    //btn.addEventListener("click", addToCart(product));
     ul.appendChild(listItem);
     listItem.appendChild(img);
     listItem.appendChild(h3);
