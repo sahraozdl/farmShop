@@ -576,6 +576,27 @@ button {
   padding: 15px;
   display: none; /* Initially hidden */
 }
+.cart-img {
+  max-width: 38px;
+  max-height: 38px;
+}
+.cart-product-name {
+  font-size: 1rem;
+  margin: 0;
+}
+.cart-product-price {
+  font-size: 1rem;
+  margin: 0;
+}
+.delete-btn {
+  background-color: var(--earth-yellow);
+  border: none;
+  color: var(--caf-noir);
+  font-weight: 800;
+  padding: 2px;
+  min-width: 1rem;
+  min-height: 1rem;
+}
 #close-cart-btn {
   background: none;
   border: none;
@@ -586,7 +607,7 @@ button {
 }
 
 #cart-container {
-  max-width: 18%;
+  width: 18%;
   display: none;
   position: fixed;
   right: 5px;

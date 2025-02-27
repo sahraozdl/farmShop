@@ -183,27 +183,6 @@ function setupCategoryListeners() {
   });
 }
 
-/*
-homeBtn.addEventListener("click",()=>{
-  if(productList.classList.contains("display")){
-    productList.classList.remove("display");
-  } else{
-    return false
-  }
-});*/
-
-/*
-function showSection(targetId) {
-  const sections = document.querySelectorAll(".section");
-  sections.forEach((section) => {
-    if (section.id === targetId) {
-      section.style.display = "block";
-    } else {
-      section.style.display = "none";
-    }
-  });
-}*/
-
 // Setup navbar click listeners
 function setupNavbarListeners() {
   const navItems = document.querySelectorAll(" .navbar-li ");
@@ -281,7 +260,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const searchInput = document.getElementById("search-input");
   const closeSearch = document.getElementById("close-search");
   const searchContainer = document.querySelector(".search-container");
-  const productList = document.querySelector("#product-section");
 
   // Expand search input
   searchBtn.addEventListener("click", () => {
@@ -308,18 +286,6 @@ document.addEventListener("DOMContentLoaded", () => {
     renderProducts(filteredProducts);
   });
 });
-document
-  .getElementById("contact-form")
-  .addEventListener("submit", function (event) {
-    if (cart.length === 0) {
-      alert("You didn’t place an order");
-      return;
-    } else {
-      event.preventDefault(); // Prevent actual submission
-      alert("Thank you! We'll get back to you soon.");
-      this.reset();
-    }
-  });
 
 function addToCart(product) {
   const existingItem = cart.find((item) => item.name === product.name);
@@ -335,44 +301,88 @@ function addToCart(product) {
 }
 
 function updateCartDisplay() {
-  cartList.innerHTML = ""; // Clear previous items
-  let totalPrice = 0;
+  cartList.innerHTML = ""; // Clear previous items doesnt work unless page refreshed
+  let totalPrice = 0; //same problem above
+  let totalQuantity = 0; // Initialize total quantity
 
   cart.forEach((item) => {
     const listItem = document.createElement("li");
-    listItem.innerHTML = `
-      <img src="${item.image}" alt="${item.name}" class="cart-img">
-      <span style="margin-right: 10px;">${item.name} x ${item.quantity}</span> 
-      <span style="margin-right: 10px;">${item.price * item.quantity}g</span>
-      `;
+    const img = document.createElement("img");
+    const h3 = document.createElement("h3");
+    const p = document.createElement("p");
+    const delBtn = document.createElement("button");
+    const count = document.getElementById("cart-count");
+
+    img.src = item.image;
+    img.alt = item.name;
+    img.classList.add("cart-img");
+    h3.classList.add("cart-product-name");
+    p.classList.add("cart-product-price");
+
+    h3.innerText = `${item.name} x ${item.quantity}`;
+    p.innerText = `${item.price * item.quantity}g`;
+
+    delBtn.innerText = "-";
+    delBtn.classList.add("delete-btn");
+    delBtn.addEventListener("click", () => {
+      removeFromCart(item.name);
+    });
+
+    listItem.appendChild(img);
+    listItem.appendChild(h3);
+    listItem.appendChild(p);
+    listItem.appendChild(delBtn);
+
     cartList.appendChild(listItem);
     totalPrice += item.price * item.quantity;
+    totalQuantity += item.quantity;
   });
-
+  document.getElementById("cart-count").innerText = totalQuantity;
   cartTotal.innerText = `Total: ${totalPrice}g`;
+
   const checkoutBtn = document.createElement("button");
-  cartList.appendChild(checkoutBtn);
   checkoutBtn.innerText = "Checkout";
   checkoutBtn.classList.add("checkout-btn");
-  checkoutBtn.addEventListener("click", () => {
-    if (cart.length === 0) {
-      alert("You didn’t place an order");
-      return;
-    }
+  cartList.appendChild(checkoutBtn);
+  checkoutBtn.addEventListener("click", () => validateCart());
+}
+function validateCart() {
+  if (cart.length === 0) {
+    alert("You didn’t place an order");
+  } else {
+    let allFieldsFilled = true;
 
     for (let key in formInputs) {
       if (!formInputs[key].value.trim()) {
-        alert("Please fill out all required fields");
-        return;
+        allFieldsFilled = false;
+        break; // Stop loop early if an empty field is found
       }
     }
 
-    alert("Order list sent successfully!");
-    cart = [];
-    //cart doesnt reset
-  });
+    if (!allFieldsFilled) {
+      alert("Please fill out all required fields");
+      document
+        .getElementById("contact-section")
+        .scrollIntoView({ behavior: "smooth" }); // Scrolls to Contact Us
+    } else {
+      alert("Order list sent successfully!");
+      totalPrice = 0; //doesnt work too
+    }
+  }
 }
-
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (event) {
+    if (cart.length === 0) {
+      alert("You didn’t place an order");
+      return;
+    } else {
+      event.preventDefault(); // Prevent actual submission
+      alert("Thank you! We'll get back to you soon.");
+      cartList.innerHTML = ""; //only clears the list not total
+      this.reset();
+    }
+  });
 // Toggle cart visibility when clicking the cart icon
 cartIcon.addEventListener("click", () => {
   cartContainer.classList.toggle("visible");
